@@ -9,7 +9,7 @@ namespace Bitcoin_CPU_miner
 {
     class Pool
     {
-        public Uri Url;
+        public readonly Uri Url;
         public string User;
         public string Password = "x";
 
