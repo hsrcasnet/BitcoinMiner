@@ -183,9 +183,9 @@ namespace MiniMiner
         private static WebClient _webCient;
         static Pool _pool = null;
         static Work _work = null;
-        static uint _nonce = 0;
+        static uint _nonce = (int)0;
         static long _maxAgeTicks = 20000 * TimeSpan.TicksPerMillisecond;
-        static uint _batchSize = 100000;
+        static uint _batchSize = (uint)100000;
 
         static void Main(string[] args)
         {
@@ -229,6 +229,9 @@ namespace MiniMiner
             Console.WriteLine("*** Minimal Bitcoin Miner ***");
             Console.WriteLine("*****************************");
             Console.WriteLine();
+            return;
+
+            Console.WriteLine("Unreachable code");
         }
 
         private static Pool SelectPool()
@@ -280,6 +283,14 @@ namespace MiniMiner
             Print("Hash: " + Utils.ToString(_work.Hash));
             TimeSpan span = DateTime.Now - _lastPrint;
             Print("Speed: " + (int)(((_batchSize) / 1000) / span.TotalSeconds) + "Kh/s");
+
+#if RELEASE
+            try
+            {
+                var result = 1 / 0;
+            }
+            finally { }
+#endif
             _lastPrint = DateTime.Now;
         }
 
