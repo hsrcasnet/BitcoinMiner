@@ -20,7 +20,7 @@ namespace BitcoinMiner.Console
 
         public static string GenerateRandomHex(int length)
         {
-            const string chars = "ABCDEF0123456789"; // Hexadecimal characters
+            string chars = "ABCDEF0123456789"; // Hexadecimal characters
             return new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
         }
     }

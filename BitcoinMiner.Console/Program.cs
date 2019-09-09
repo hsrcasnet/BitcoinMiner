@@ -85,6 +85,8 @@ namespace MiniMiner
 
         internal bool FindShare(ref uint nonce, uint batchSize)
         {
+            var counter = 0;
+
             for (; batchSize > 0; batchSize--)
             {
                 BitConverter.GetBytes(nonce).CopyTo(Current, _nonceOffset);
@@ -284,13 +286,13 @@ namespace MiniMiner
             TimeSpan span = DateTime.Now - _lastPrint;
             Print("Speed: " + (int)(((_batchSize) / 1000) / span.TotalSeconds) + "Kh/s");
 
-#if RELEASE
-            try
-            {
-                var result = 1 / 0;
-            }
-            finally { }
-#endif
+            // DEMO: This will generate an code analysis error
+            //try
+            //{
+            //    var result = 1 / 0;
+            //}
+            //finally { }
+
             _lastPrint = DateTime.Now;
         }
 
