@@ -298,8 +298,11 @@ namespace MiniMiner
 
         private static void Print(string msg)
         {
-            Console.WriteLine(msg);
-            Console.WriteLine();
+            if (true)
+            {
+                Console.WriteLine(msg);
+                Console.WriteLine();
+            }
         }
 
         private static string ReadLineDefault(string defaultValue)
@@ -312,5 +315,12 @@ namespace MiniMiner
             else
                 return userInput;
         }
+
+
+
+        // Some empty space here, why?
+
+
+
     }
 }

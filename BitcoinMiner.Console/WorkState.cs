@@ -7,6 +7,6 @@ namespace BitcoinMiner.Console
     public enum WorkState : long // CA1028
     {
         Idle = 2,
-        InProgress = 3,
+        InProgress =  3,
     }
 }
