@@ -149,8 +149,16 @@ namespace MiniMiner
 
         private string InvokeMethod(string method, string paramString = null)
         {
-            var json = this._webCient.Request(method, paramString);
-            return json;
+            if (true)
+            {
+                var test = "";
+                var json = this._webCient.Request(method, paramString);
+                return json;
+            }
+            else
+            {
+                return "";
+            }
         }
 
         public Work GetWork(bool silent = false)
