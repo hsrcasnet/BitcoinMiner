@@ -4,6 +4,7 @@ using System.Text;
 
 namespace BitcoinMiner.Console
 {
+    // TODO: [work item 33333] Remove unused code 
     internal class Program2
     {
         static void Main2(string[] args)

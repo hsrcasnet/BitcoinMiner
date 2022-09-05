@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 using System.Security.Cryptography;
 using BitcoinMiner.Console;
 
+// TODO: [work item 222222] This namespace should be renamed
 namespace MiniMiner
 {
     class Utils
@@ -62,7 +63,7 @@ namespace MiniMiner
         public static string AddPadding(string input)
         {
             //add the padding to the payload. It never changes.
-            return input + "000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000";
+            return input + "000000800000000000000000000000000000000000000000000000000000000000000000000000000000000080020000"; // HACK: [work item 11111] Just another identifier 'HACK'
         }
     }
 
