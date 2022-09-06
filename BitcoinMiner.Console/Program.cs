@@ -248,7 +248,7 @@ namespace MiniMiner
 
         // DEMO: Add dotnet_diagnostic.CA1822.severity = error
         // to .editorconfig and see what happens
-        private Pool SelectPool()
+        private static Pool SelectPool()
         {
             ClearConsole();
             Print("Chose a Mining Pool 'user:password@url:port' or leave empty to skip.");
