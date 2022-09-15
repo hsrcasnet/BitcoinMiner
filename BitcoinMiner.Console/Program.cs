@@ -242,7 +242,6 @@ namespace MiniMiner
             Console.WriteLine();
             return;
 
-            Console.WriteLine("Unreachable code");
         }
 
 
