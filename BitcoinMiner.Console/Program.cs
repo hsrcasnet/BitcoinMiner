@@ -237,8 +237,7 @@ namespace MiniMiner
         {
             Console.Clear();
             Console.WriteLine("*****************************");
-            Console.WriteLine("*** Minimal Bitcoin Miner ***");
-            Console.WriteLine("*** Copyright 2022        ***");
+            Console.WriteLine("*** Bitcoin Miner         ***");
             Console.WriteLine("*****************************");
             Console.WriteLine();
             return;
