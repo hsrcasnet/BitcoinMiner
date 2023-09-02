@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
 	  
 	<!--DEMO: EnableNETAnalyzers is 'true' by default for net5.0 and later-->
     <!--<EnableNETAnalyzers>true</EnableNETAnalyzers>-->
